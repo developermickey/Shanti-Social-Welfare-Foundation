@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Shanti Social Welfare Foundation offers professional care, yoga meditation, nutritious meals, indoor games, and daily assistance in Bhopal, MP and Durg, Chhattisgarh." />
+  <title>Shanti Social Welfare Foundation</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            forest: '#174235',
+            leaf: '#2f7d5b',
+            amberSoft: '#f2b84b',
+            mist: '#f5f8f3',
+            ink: '#17211d'
+          },
+          fontFamily: {
+            sans: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif']
+          },
+          boxShadow: {
+            glow: '0 24px 70px rgba(23, 66, 53, 0.18)'
+          }
+        }
+      }
+    };
+  </script>
+  <link rel="preconnect" href="https://images.unsplash.com" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    html { scroll-behavior: smooth; }
+    .hero-overlay {
+      background: linear-gradient(90deg, rgba(18, 47, 39, .9), rgba(18, 47, 39, .66), rgba(18, 47, 39, .24));
+    }
+  </style>
+</head>
+<body class="bg-mist text-ink antialiased">
+  <header class="fixed inset-x-0 top-0 z-50 border-b border-white/10 bg-forest/90 text-white backdrop-blur">
+    <nav class="relative mx-auto flex w-full max-w-7xl items-center justify-between px-5 py-4 lg:px-8" aria-label="Main navigation">
+      <a href="#home" class="flex min-w-0 items-center gap-3">
+        <span class="grid h-11 w-11 place-items-center rounded-full bg-white text-lg font-extrabold text-forest">S</span>
+        <span>
+          <span class="block text-sm font-bold leading-tight sm:text-base">Shanti Social Welfare</span>
+          <span class="block text-xs text-white/70">Foundation</span>
+        </span>
+      </a>
+
+      <div class="flex shrink-0 items-center justify-end pl-4 pr-0">
+        <button id="menuButton" class="inline-flex shrink-0 items-center gap-2 rounded-md p-2 text-white xl:hidden" type="button" aria-label="Open menu" aria-expanded="false">
+          <svg class="h-7 w-7" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" d="M4 7h16M4 12h16M4 17h16"></path>
+          </svg>
+          <span class="sr-only">Menu</span>
+        </button>
+
+        <div id="desktopMenu" class="hidden items-center gap-6 text-sm font-semibold xl:flex 2xl:gap-8">
+          <a class="transition hover:text-amberSoft" href="#services">Services</a>
+          <a class="transition hover:text-amberSoft" href="#nasha-mukti">Nasha Mukti</a>
+          <a class="transition hover:text-amberSoft" href="#why-us">Why Choose Us</a>
+          <a class="transition hover:text-amberSoft" href="#facilities">Facilities</a>
+          <a class="transition hover:text-amberSoft" href="#contact">Contact</a>
+          <a class="shrink-0 rounded-full bg-amberSoft px-5 py-2.5 font-bold text-forest transition hover:bg-white" href="tel:+919111755922">Call Now</a>
+        </div>
+      </div>
+    </nav>
+
+    <div id="mobileMenu" class="hidden border-t border-white/10 bg-forest px-5 pb-5 xl:hidden">
+      <div class="flex flex-col gap-4 pt-4 text-sm font-semibold">
+        <a class="mobile-link" href="#services">Services</a>
+        <a class="mobile-link" href="#nasha-mukti">Nasha Mukti</a>
+        <a class="mobile-link" href="#why-us">Why Choose Us</a>
+        <a class="mobile-link" href="#facilities">Facilities</a>
+        <a class="mobile-link" href="#contact">Contact</a>
+        <a class="rounded-full bg-amberSoft px-5 py-3 text-center font-bold text-forest" href="tel:+919111755922">Call Now</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="relative min-h-[92vh] overflow-hidden pt-20 text-white">
+      <img
+        class="absolute inset-0 h-full w-full object-cover"
+        src="https://images.unsplash.com/photo-1516302752625-fcc3c50ae61f?auto=format&fit=crop&w=1800&q=85"
+        alt="Calm yoga and meditation setting"
+      />
+      <div class="hero-overlay absolute inset-0"></div>
+      <div class="relative mx-auto flex min-h-[calc(92vh-5rem)] max-w-7xl items-center px-5 py-20 lg:px-8">
+        <div class="max-w-3xl">
+          <p class="mb-5 inline-flex rounded-full bg-white/15 px-4 py-2 text-sm font-semibold text-white backdrop-blur">Bhopal, MP and Durg, Chhattisgarh</p>
+          <h1 class="text-4xl font-extrabold leading-tight sm:text-5xl lg:text-7xl">Shanti Social Welfare Foundation</h1>
+          <p class="mt-6 max-w-2xl text-lg leading-8 text-white/88 sm:text-xl">
+            Welcome to Shanti Social Welfare Foundation. Necessity is the mother of all new beginnings, and we offer compassionate guidance, care, de-addiction support, and daily assistance.
+          </p>
+          <div class="mt-9 flex flex-col gap-4 sm:flex-row">
+            <a class="rounded-full bg-amberSoft px-7 py-4 text-center text-base font-extrabold text-forest shadow-glow transition hover:bg-white" href="tel:+919111755922">Call +91-9111755922</a>
+            <a class="rounded-full border border-white/50 px-7 py-4 text-center text-base font-bold text-white transition hover:bg-white hover:text-forest" href="#contact">Send Message</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-white py-10">
+      <div class="mx-auto grid max-w-7xl gap-5 px-5 sm:grid-cols-2 lg:grid-cols-4 lg:px-8">
+        <div class="rounded-lg border border-forest/10 bg-mist p-5">
+          <p class="text-3xl font-extrabold text-leaf">24/7</p>
+          <p class="mt-2 font-semibold">Customer service and professional care</p>
+        </div>
+        <div class="rounded-lg border border-forest/10 bg-mist p-5">
+          <p class="text-3xl font-extrabold text-leaf">Daily</p>
+          <p class="mt-2 font-semibold">Updates to family by call or message</p>
+        </div>
+        <div class="rounded-lg border border-forest/10 bg-mist p-5">
+          <p class="text-3xl font-extrabold text-leaf">Care</p>
+          <p class="mt-2 font-semibold">Safe, accessible, and fully equipped living</p>
+        </div>
+        <div class="rounded-lg border border-forest/10 bg-mist p-5">
+          <p class="text-3xl font-extrabold text-leaf">Support</p>
+          <p class="mt-2 font-semibold">Family-focused guidance and planning</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="py-20">
+      <div class="mx-auto max-w-7xl px-5 lg:px-8">
+        <div class="max-w-3xl">
+          <p class="text-sm font-extrabold uppercase tracking-[0.18em] text-leaf">Our Service</p>
+          <h2 class="mt-3 text-3xl font-extrabold text-forest sm:text-5xl">Professional care services for healthier daily living</h2>
+          <p class="mt-5 text-lg leading-8 text-ink/70">Our professional expert team is ready to serve families in Bhopal, Madhya Pradesh and Durg, Chhattisgarh.</p>
+        </div>
+
+        <div class="mt-12 grid gap-6 xl:grid-cols-12">
+          <div class="grid gap-6 md:grid-cols-2 xl:col-span-7">
+          <article class="rounded-lg bg-white p-7 shadow-glow">
+            <div class="mb-5 grid h-12 w-12 place-items-center rounded-full bg-leaf/10 text-leaf">
+              <svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6"></path></svg>
+            </div>
+            <h3 class="text-xl font-extrabold text-forest">One-to-One Help</h3>
+            <p class="mt-3 leading-7 text-ink/70">Get personal help to understand thoughts, feelings, behaviors, and daily goals.</p>
+          </article>
+          <article class="rounded-lg bg-white p-7 shadow-glow">
+            <div class="mb-5 grid h-12 w-12 place-items-center rounded-full bg-leaf/10 text-leaf">
+              <svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M4 19c4-9 10-13 16-14-1 7-5 13-14 16"></path></svg>
+            </div>
+            <h3 class="text-xl font-extrabold text-forest">Yoga Meditation</h3>
+            <p class="mt-3 leading-7 text-ink/70">Yoga and meditation sessions designed for relaxation, stability, and well-being.</p>
+          </article>
+          <article class="rounded-lg bg-white p-7 shadow-glow">
+            <div class="mb-5 grid h-12 w-12 place-items-center rounded-full bg-leaf/10 text-leaf">
+              <svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M7 21h10M12 3v18M5 8h14M6 8l2 5h8l2-5"></path></svg>
+            </div>
+            <h3 class="text-xl font-extrabold text-forest">Nutritious Meals</h3>
+            <p class="mt-3 leading-7 text-ink/70">Balanced meal suggestions that can accommodate dietary needs as required.</p>
+          </article>
+          <article class="rounded-lg bg-white p-7 shadow-glow">
+            <div class="mb-5 grid h-12 w-12 place-items-center rounded-full bg-leaf/10 text-leaf">
+              <svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M8 8h8v8H8zM4 4h4v4H4zM16 4h4v4h-4zM4 16h4v4H4zM16 16h4v4h-4z"></path></svg>
+            </div>
+            <h3 class="text-xl font-extrabold text-forest">Indoor Games</h3>
+            <p class="mt-3 leading-7 text-ink/70">Indoor activities that bring entertainment, relaxation, and meaningful engagement.</p>
+          </article>
+          </div>
+          <article class="overflow-hidden rounded-lg bg-forest text-white shadow-glow xl:col-span-5">
+            <img
+              class="h-56 w-full object-cover opacity-85"
+              src="https://images.unsplash.com/photo-1493836512294-502baa1986e2?auto=format&fit=crop&w=900&q=85"
+              alt="Calm support conversation"
+            />
+            <div class="p-7">
+            <div class="mb-5 grid h-12 w-12 place-items-center rounded-full bg-amberSoft text-forest">
+              <svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21c4-2 7-5.5 7-10V5l-7-3-7 3v6c0 4.5 3 8 7 10zM9 12l2 2 4-5"></path></svg>
+            </div>
+            <p class="text-sm font-extrabold uppercase tracking-[0.18em] text-amberSoft">Featured Care</p>
+            <h3 class="mt-3 text-2xl font-extrabold">Nasha Mukti Kendra</h3>
+            <p class="mt-4 leading-7 text-white/75">Supportive de-addiction care with guidance, routine, counselling support, family involvement, and a safe environment.</p>
+            <a class="mt-6 inline-flex rounded-full bg-amberSoft px-6 py-3 font-extrabold text-forest transition hover:bg-white" href="#nasha-mukti">View Details</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="nasha-mukti" class="bg-white py-20">
+      <div class="mx-auto grid max-w-7xl gap-12 px-5 lg:grid-cols-[1fr_0.95fr] lg:items-center lg:px-8">
+        <div>
+          <p class="text-sm font-extrabold uppercase tracking-[0.18em] text-leaf">Nasha Mukti Kendra</p>
+          <h2 class="mt-3 text-3xl font-extrabold text-forest sm:text-5xl">Compassionate support for addiction recovery</h2>
+          <p class="mt-5 text-lg leading-8 text-ink/70">
+            Shanti Social Welfare Foundation provides a caring and structured environment for people seeking support from alcohol, substance, and other addiction challenges. Our approach focuses on dignity, discipline, emotional support, healthy routine, and family coordination.
+          </p>
+          <div class="mt-8 grid gap-4 sm:grid-cols-2">
+            <div class="rounded-lg border border-forest/10 bg-mist p-5">
+              <h3 class="font-extrabold text-forest">Personal Guidance</h3>
+              <p class="mt-2 leading-7 text-ink/70">One-to-one support to understand habits, triggers, emotions, and recovery goals.</p>
+            </div>
+            <div class="rounded-lg border border-forest/10 bg-mist p-5">
+              <h3 class="font-extrabold text-forest">Healthy Daily Routine</h3>
+              <p class="mt-2 leading-7 text-ink/70">Yoga, meditation, balanced meals, indoor activities, and supervised daily structure.</p>
+            </div>
+            <div class="rounded-lg border border-forest/10 bg-mist p-5">
+              <h3 class="font-extrabold text-forest">Family Support</h3>
+              <p class="mt-2 leading-7 text-ink/70">Regular communication with family members to share updates and recovery guidance.</p>
+            </div>
+            <div class="rounded-lg border border-forest/10 bg-mist p-5">
+              <h3 class="font-extrabold text-forest">Safe Environment</h3>
+              <p class="mt-2 leading-7 text-ink/70">Comfortable living conditions with attentive care and 24/7 professional availability.</p>
+            </div>
+          </div>
+          <a class="mt-8 inline-flex rounded-full bg-forest px-7 py-4 font-extrabold text-white transition hover:bg-leaf" href="tel:+919111755922">Call for Nasha Mukti Help</a>
+        </div>
+        <img
+          class="h-[520px] w-full rounded-lg object-cover shadow-glow"
+          src="https://images.unsplash.com/photo-1493836512294-502baa1986e2?auto=format&fit=crop&w=1200&q=85"
+          alt="Calm counselling support conversation"
+        />
+      </div>
+    </section>
+
+    <section id="why-us" class="bg-forest py-20 text-white">
+      <div class="mx-auto grid max-w-7xl gap-12 px-5 lg:grid-cols-[0.9fr_1.1fr] lg:items-center lg:px-8">
+        <div>
+          <p class="text-sm font-extrabold uppercase tracking-[0.18em] text-amberSoft">Why Choose Us</p>
+          <h2 class="mt-3 text-3xl font-extrabold sm:text-5xl">Care that keeps families connected and people supported</h2>
+          <p class="mt-5 text-lg leading-8 text-white/75">The Shanti Social Welfare Foundation, based in Bhopal, Madhya Pradesh, endeavors to impact people’s lives significantly through safe living, professional support, and daily care.</p>
+          <a class="mt-8 inline-flex rounded-full bg-amberSoft px-7 py-4 font-extrabold text-forest transition hover:bg-white" href="tel:+919111755922">Call Us Now</a>
+        </div>
+        <div class="grid gap-4 sm:grid-cols-2">
+          <div class="rounded-lg bg-white/10 p-6 backdrop-blur">
+            <h3 class="font-extrabold text-amberSoft">Fully Equipped</h3>
+            <p class="mt-3 leading-7 text-white/75">Safe, accessible, luxurious, and fully equipped environment.</p>
+          </div>
+          <div class="rounded-lg bg-white/10 p-6 backdrop-blur">
+            <h3 class="font-extrabold text-amberSoft">Healthier Methods</h3>
+            <p class="mt-3 leading-7 text-white/75">Various methods are crafted to help you become healthier.</p>
+          </div>
+          <div class="rounded-lg bg-white/10 p-6 backdrop-blur">
+            <h3 class="font-extrabold text-amberSoft">Skilled Team</h3>
+            <p class="mt-3 leading-7 text-white/75">A team comprising highly skilled professionals.</p>
+          </div>
+          <div class="rounded-lg bg-white/10 p-6 backdrop-blur">
+            <h3 class="font-extrabold text-amberSoft">Daily Updates</h3>
+            <p class="mt-3 leading-7 text-white/75">Family updates by call or message to keep everyone informed.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="facilities" class="py-20">
+      <div class="mx-auto max-w-7xl px-5 lg:px-8">
+        <div class="grid gap-10 lg:grid-cols-[1fr_0.95fr] lg:items-center">
+          <div>
+            <p class="text-sm font-extrabold uppercase tracking-[0.18em] text-leaf">Facilities</p>
+            <h2 class="mt-3 text-3xl font-extrabold text-forest sm:text-5xl">A welcoming environment with daily care and social activities</h2>
+            <div class="mt-10 grid gap-5 sm:grid-cols-2">
+              <div class="rounded-lg bg-white p-6 shadow-glow">
+                <h3 class="font-extrabold text-forest">Daily Assistance</h3>
+                <p class="mt-3 leading-7 text-ink/70">Monitoring and assistance in daily activities.</p>
+              </div>
+              <div class="rounded-lg bg-white p-6 shadow-glow">
+                <h3 class="font-extrabold text-forest">Best Living Conditions</h3>
+                <p class="mt-3 leading-7 text-ink/70">A welcoming, comforting environment that creates a sense of home.</p>
+              </div>
+              <div class="rounded-lg bg-white p-6 shadow-glow">
+                <h3 class="font-extrabold text-forest">24/7 Professional Care</h3>
+                <p class="mt-3 leading-7 text-ink/70">Professionals are available to provide comprehensive attention.</p>
+              </div>
+              <div class="rounded-lg bg-white p-6 shadow-glow">
+                <h3 class="font-extrabold text-forest">Social Activities</h3>
+                <p class="mt-3 leading-7 text-ink/70">Yoga, meditation, drama, plays, dance, music, and entertainment programs.</p>
+              </div>
+            </div>
+          </div>
+          <img
+            class="h-[520px] w-full rounded-lg object-cover shadow-glow"
+            src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=1200&q=85"
+            alt="Supportive community activity"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="bg-white py-20">
+      <div class="mx-auto grid max-w-7xl gap-12 px-5 lg:grid-cols-[0.85fr_1.15fr] lg:px-8">
+        <div>
+          <p class="text-sm font-extrabold uppercase tracking-[0.18em] text-leaf">Call Us Today for Free</p>
+          <h2 class="mt-3 text-3xl font-extrabold text-forest sm:text-5xl">Speak with our care team</h2>
+          <p class="mt-5 text-lg leading-8 text-ink/70">Send your details and our team will contact you. You can also call directly for immediate help.</p>
+
+          <div class="mt-8 space-y-5">
+            <a class="flex gap-4 rounded-lg border border-forest/10 bg-mist p-5 transition hover:border-leaf" href="mailto:shantisocialwelfarefoundation@gmail.com">
+              <span class="font-extrabold text-leaf">Email</span>
+              <span class="break-all text-ink/75">shantisocialwelfarefoundation@gmail.com</span>
+            </a>
+            <a class="flex gap-4 rounded-lg border border-forest/10 bg-mist p-5 transition hover:border-leaf" href="tel:+919111755922">
+              <span class="font-extrabold text-leaf">Phone</span>
+              <span class="text-ink/75">+91-9111755922</span>
+            </a>
+            <div class="rounded-lg border border-forest/10 bg-mist p-5">
+              <p class="font-extrabold text-leaf">Address</p>
+              <p class="mt-2 leading-7 text-ink/75">129 LIG, Harshwardhan Nagar, Bhopal, Madhya Pradesh, India, Postal code - 462003</p>
+            </div>
+          </div>
+        </div>
+
+        <form id="contactForm" class="rounded-lg bg-mist p-6 shadow-glow sm:p-8" action="send-mail.php" method="POST">
+          <div id="formMessage" class="mb-5 hidden rounded-lg px-4 py-3 text-sm font-semibold"></div>
+          <div class="grid gap-5 sm:grid-cols-2">
+            <label class="block">
+              <span class="mb-2 block text-sm font-bold text-forest">Full Name</span>
+              <input class="w-full rounded-lg border border-forest/15 bg-white px-4 py-3 outline-none transition focus:border-leaf focus:ring-4 focus:ring-leaf/15" name="name" type="text" required />
+            </label>
+            <label class="block">
+              <span class="mb-2 block text-sm font-bold text-forest">Phone Number</span>
+              <input class="w-full rounded-lg border border-forest/15 bg-white px-4 py-3 outline-none transition focus:border-leaf focus:ring-4 focus:ring-leaf/15" name="phone" type="tel" required />
+            </label>
+          </div>
+          <label class="mt-5 block">
+            <span class="mb-2 block text-sm font-bold text-forest">Email Address</span>
+            <input class="w-full rounded-lg border border-forest/15 bg-white px-4 py-3 outline-none transition focus:border-leaf focus:ring-4 focus:ring-leaf/15" name="email" type="email" required />
+          </label>
+          <label class="mt-5 block">
+            <span class="mb-2 block text-sm font-bold text-forest">Service Needed</span>
+            <select class="w-full rounded-lg border border-forest/15 bg-white px-4 py-3 outline-none transition focus:border-leaf focus:ring-4 focus:ring-leaf/15" name="service" required>
+              <option value="">Select a service</option>
+              <option>One-to-One Help</option>
+              <option>Yoga Meditation</option>
+              <option>Nutritious And Balanced Meals</option>
+              <option>Indoor Games</option>
+              <option>Nasha Mukti Kendra</option>
+              <option>Daily Assistance</option>
+              <option>Professional Care</option>
+            </select>
+          </label>
+          <label class="mt-5 block">
+            <span class="mb-2 block text-sm font-bold text-forest">Message</span>
+            <textarea class="min-h-36 w-full rounded-lg border border-forest/15 bg-white px-4 py-3 outline-none transition focus:border-leaf focus:ring-4 focus:ring-leaf/15" name="message" required></textarea>
+          </label>
+          <input type="text" name="website" class="hidden" tabindex="-1" autocomplete="off" />
+          <button class="mt-6 w-full rounded-full bg-forest px-7 py-4 text-base font-extrabold text-white transition hover:bg-leaf" type="submit">Send Message</button>
+          <p class="mt-4 text-center text-sm text-ink/55">Your message will be sent to shantisocialwelfarefoundation@gmail.com</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-forest text-white">
+    <div class="mx-auto grid max-w-7xl gap-10 px-5 py-14 sm:grid-cols-2 lg:grid-cols-4 lg:px-8">
+      <div>
+        <a href="#home" class="flex items-center gap-3">
+          <span class="grid h-11 w-11 place-items-center rounded-full bg-white text-lg font-extrabold text-forest">S</span>
+          <span>
+            <span class="block text-base font-bold leading-tight">Shanti Social Welfare</span>
+            <span class="block text-xs text-white/70">Foundation</span>
+          </span>
+        </a>
+        <p class="mt-5 leading-7 text-white/70">Compassionate guidance, daily assistance, wellness support, and Nasha Mukti care in a safe environment.</p>
+      </div>
+
+      <div>
+        <h3 class="text-base font-extrabold text-amberSoft">Quick Links</h3>
+        <div class="mt-5 flex flex-col gap-3 text-sm text-white/75">
+          <a class="transition hover:text-amberSoft" href="#home">Home</a>
+          <a class="transition hover:text-amberSoft" href="#services">Services</a>
+          <a class="transition hover:text-amberSoft" href="#nasha-mukti">Nasha Mukti</a>
+          <a class="transition hover:text-amberSoft" href="#why-us">Why Choose Us</a>
+          <a class="transition hover:text-amberSoft" href="#contact">Contact</a>
+        </div>
+      </div>
+
+      <div>
+        <h3 class="text-base font-extrabold text-amberSoft">Our Services</h3>
+        <div class="mt-5 flex flex-col gap-3 text-sm text-white/75">
+          <a class="transition hover:text-amberSoft" href="#services">One-to-One Help</a>
+          <a class="transition hover:text-amberSoft" href="#services">Yoga Meditation</a>
+          <a class="transition hover:text-amberSoft" href="#services">Nutritious Meals</a>
+          <a class="transition hover:text-amberSoft" href="#services">Indoor Games</a>
+          <a class="transition hover:text-amberSoft" href="#nasha-mukti">Nasha Mukti Kendra</a>
+        </div>
+      </div>
+
+      <div>
+        <h3 class="text-base font-extrabold text-amberSoft">Contact Us</h3>
+        <div class="mt-5 space-y-4 text-sm text-white/75">
+          <a class="block break-all transition hover:text-amberSoft" href="mailto:shantisocialwelfarefoundation@gmail.com">shantisocialwelfarefoundation@gmail.com</a>
+          <a class="block font-bold text-white transition hover:text-amberSoft" href="tel:+919111755922">+91-9111755922</a>
+          <p class="leading-7">129 LIG, Harshwardhan Nagar, Bhopal, Madhya Pradesh, India - 462003</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="border-t border-white/10">
+      <div class="mx-auto flex max-w-7xl flex-col gap-5 px-5 py-6 text-sm text-white/70 sm:flex-row sm:items-center sm:justify-between lg:px-8">
+        <p>Copyright 2024 © shantifoundation.in All Rights Reserved.</p>
+        <div class="flex items-center gap-3">
+          <a class="grid h-10 w-10 place-items-center rounded-full bg-white/10 text-white transition hover:bg-amberSoft hover:text-forest" href="#" aria-label="Facebook">
+            <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 8h3V4h-3c-3.3 0-5 2-5 5v2H6v4h3v5h4v-5h3.2l.8-4h-4V9c0-.7.3-1 1-1z"></path></svg>
+          </a>
+          <a class="grid h-10 w-10 place-items-center rounded-full bg-white/10 text-white transition hover:bg-amberSoft hover:text-forest" href="#" aria-label="Instagram">
+            <svg class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><rect width="16" height="16" x="4" y="4" rx="4"></rect><circle cx="12" cy="12" r="3"></circle><path stroke-linecap="round" d="M17.5 6.5h.01"></path></svg>
+          </a>
+          <a class="grid h-10 w-10 place-items-center rounded-full bg-white/10 text-white transition hover:bg-amberSoft hover:text-forest" href="#" aria-label="YouTube">
+            <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M21.6 7.2s-.2-1.5-.8-2.1c-.8-.8-1.7-.8-2.1-.9C15.8 4 12 4 12 4s-3.8 0-6.7.2c-.4.1-1.3.1-2.1.9-.6.6-.8 2.1-.8 2.1S2 9 2 10.8v1.7c0 1.8.4 3.6.4 3.6s.2 1.5.8 2.1c.8.8 1.9.8 2.4.9 1.7.2 6.4.2 6.4.2s3.8 0 6.7-.2c.4-.1 1.3-.1 2.1-.9.6-.6.8-2.1.8-2.1s.4-1.8.4-3.6v-1.7c0-1.8-.4-3.6-.4-3.6zM10 14.8V8.7l5.7 3.1-5.7 3z"></path></svg>
+          </a>
+          <a class="grid h-10 w-10 place-items-center rounded-full bg-white/10 text-white transition hover:bg-amberSoft hover:text-forest" href="#" aria-label="WhatsApp">
+            <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a9.9 9.9 0 0 0-8.5 15L2.3 22l5.1-1.3A10 10 0 1 0 12 2zm0 18a8 8 0 0 1-4.1-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8 8 0 1 1 12 20zm4.4-5.9c-.2-.1-1.4-.7-1.6-.8-.2-.1-.4-.1-.6.1-.2.3-.6.8-.8.9-.1.2-.3.2-.5.1a6.6 6.6 0 0 1-3.3-2.9c-.1-.2 0-.4.1-.5l.4-.5c.1-.1.2-.3.3-.4.1-.2 0-.3 0-.5l-.7-1.6c-.2-.4-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.3.3-1 1-1 2.3s1 2.6 1.1 2.8c.1.2 2 3 4.8 4.2.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.4-.6 1.6-1.1.2-.6.2-1 .2-1.1-.1-.1-.3-.2-.6-.3z"></path></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const menuButton = document.getElementById('menuButton');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const form = document.getElementById('contactForm');
+    const formMessage = document.getElementById('formMessage');
+
+    menuButton.addEventListener('click', () => {
+      const isOpen = !mobileMenu.classList.contains('hidden');
+      mobileMenu.classList.toggle('hidden');
+      menuButton.setAttribute('aria-expanded', String(!isOpen));
+    });
+
+    document.querySelectorAll('.mobile-link').forEach((link) => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+        menuButton.setAttribute('aria-expanded', 'false');
+      });
+    });
+
+    form.addEventListener('submit', async (event) => {
+      event.preventDefault();
+      formMessage.className = 'mb-5 rounded-lg bg-amberSoft/20 px-4 py-3 text-sm font-semibold text-forest';
+      formMessage.textContent = 'Sending your message...';
+
+      try {
+        const response = await fetch(form.action, {
+          method: 'POST',
+          body: new FormData(form),
+          headers: { 'Accept': 'application/json' }
+        });
+        const data = await response.json();
+
+        if (!response.ok || !data.success) {
+          throw new Error(data.message || 'Please try again.');
+        }
+
+        form.reset();
+        formMessage.className = 'mb-5 rounded-lg bg-green-100 px-4 py-3 text-sm font-semibold text-green-800';
+        formMessage.textContent = data.message;
+      } catch (error) {
+        formMessage.className = 'mb-5 rounded-lg bg-red-100 px-4 py-3 text-sm font-semibold text-red-800';
+        formMessage.textContent = error.message || 'Unable to send message right now.';
+      }
+    });
+  </script>
+</body>
+</html>
