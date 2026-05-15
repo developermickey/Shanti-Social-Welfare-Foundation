@@ -3,7 +3,7 @@ declare(strict_types=1);
 
 header('Content-Type: application/json');
 
-$to = 'shantisocialwelfarefoundation@gmail.com';
+$to = 'mukeshpathak345@gmail.com';
 $siteName = 'Shanti Social Welfare Foundation';
 
 function json_response(bool $success, string $message, int $status = 200): void
